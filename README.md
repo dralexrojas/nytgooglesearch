@@ -7,3 +7,6 @@ This is a React-based Google Books Search app. This app uses Node, Express and M
 ### App
 
 The app allows users to search for books by title.  They can save the books to a database.  They can also click on a button to purchase books.
+
+### Demo
+You can use the app here: https://ajr-nytgooglebooksearch.herokuapp.com/
