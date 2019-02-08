@@ -4,6 +4,39 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../src/background.jpg);
+  color: black;
+}
+
+.nav{
+  background-color: black
+}
+
+.nav-link{
+  color: white
+}
+
+.page-title{
+  color: white
+}
+
+.btn{
+  margin: 10px;
+  background-color: darkgrey;
+  width: 130px;
+  height: 40px;
+}
+
+.mx-auto{
+  color: white
+}
+
+.jumbotron{
+  background-color: darkgrey
+}
+
+.card-body{
+  color: black
 }
 
 code {
