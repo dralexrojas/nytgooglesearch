@@ -1,21 +1,26 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Saved from './pages/saved';
+import Search from './pages/search';
+import Nav from './components/Nav'
+import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Router>
+        <div>
+          <Nav />
+          <div className="jumbotron text-center col-md-10 mx-auto">
+          <h1>NYT Google Book Search</h1>
+          </div>
+          <Switch>
+            <Route exact path="/" component ={Search}/>
+            <Route exact path="/saved" component = {Saved}/>
+            <Route path ="*" component = {Search}/>
+          </Switch>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+      </Router>
+    )
 }
 
 export default App;
